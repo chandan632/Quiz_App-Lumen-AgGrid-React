@@ -1,0 +1,135 @@
+.sub-category-stats {
+  width: 80%;
+  height: 100vh;
+  float: right;
+  padding: 20px;
+}
+
+.categoryForm__header {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.categoriesList__header {
+  margin-top: 30px;
+}
+
+.categoryAdd__form {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.subCategoryInput {
+  width: 250px;
+  height: 30px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border-radius: 5px;
+  border: none;
+  padding: 2px 5px;
+  margin-bottom: 10px;
+  color: white !important;
+}
+
+.subCategorySelect {
+  width: 250px;
+  height: 30px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border-radius: 5px;
+  border: none;
+  padding: 2px 5px;
+  margin-bottom: 20px;
+}
+
+.addCategory__btn {
+  padding: 7px 15px;
+  border: 1px solid rgb(113, 113, 226);
+  color: rgb(113, 113, 226);
+  background-color: white;
+  border-radius: 5px;
+}
+.addCategory__btn:hover {
+  background-color: rgb(113, 113, 226);
+  color: white;
+}
+
+span > svg {
+  margin-left: 15px;
+}
+
+.edit {
+  cursor: pointer;
+  color: green;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+}
+
+.addSubCategory {
+  padding: 10px 15px;
+  color: rgb(113, 113, 247);
+  border: 1px solid rgb(113, 113, 247);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  float: right;
+}
+
+.addSubCategory:hover {
+  color: white;
+  background-color: rgb(113, 113, 247);
+  transform: scale(1.1);
+}
+
+.subCategoryModal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.subCategoryDropBox {
+  position: relative;
+  background-color: #fefefe;
+  left: 40%;
+  padding: 0;
+  border: 1px solid #888;
+  width: 500px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

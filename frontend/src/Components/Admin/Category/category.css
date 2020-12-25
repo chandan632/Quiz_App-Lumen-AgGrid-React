@@ -1,0 +1,137 @@
+.category-stats {
+  width: 80%;
+  height: 100vh;
+  float: right;
+  padding: 20px;
+}
+
+.categoryForm__header {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.categoriesList__header {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.categoryAdd__form {
+  /* margin-bottom: 40px;
+  margin-top: 10px; */
+  text-align: center;
+}
+
+.categoryAdd__form > input {
+  width: 250px;
+  height: 30px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border-radius: 5px;
+  border: none;
+  padding: 2px 5px;
+  margin-bottom: 10px;
+}
+
+.categoryAdd__form > button {
+  padding: 7px 15px;
+  border: 1px solid blue;
+  color: blue;
+  background-color: white;
+  border-radius: 5px;
+}
+.categoryAdd__form > button:hover {
+  background-color: blue;
+  color: white;
+}
+
+span > svg {
+  margin-left: 15px;
+}
+
+.edit {
+  cursor: pointer;
+  color: green;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+}
+
+.addCategoryBtn {
+  padding: 10px 15px;
+  border: 1px solid rgb(84, 84, 241);
+  color: rgb(84, 84, 241);
+  font-size: 15px;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+}
+.addCategoryBtn:hover {
+  background-color: rgb(84, 84, 241);
+  color: white;
+  transform: scale(1.1);
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.drop {
+  position: relative;
+  background-color: #fefefe;
+  left: 40%;
+  padding: 0;
+  border: 1px solid #888;
+  width: 500px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modalClose {
+  float: right;
+  cursor: pointer;
+}
+
+.userEditIcon {
+  cursor: pointer;
+  color: green;
+}

@@ -1,0 +1,135 @@
+.add-questions-stats {
+  width: 80%;
+  height: 100vh;
+  padding: 20px;
+  float: right;
+}
+
+.formSection {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questionsInDetails {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.questionsCon {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.formSection > h2 {
+  margin: 20px 0;
+}
+
+.row {
+  width: 100%;
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.row > input {
+  width: 150px;
+  height: 30px;
+  margin: 10px 15px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border: none;
+  color: white;
+  padding: 2px 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+::placeholder {
+  color: white;
+}
+
+select {
+  width: 150px;
+  height: 30px;
+  margin: 10px 15px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border: none;
+  color: white;
+  padding: 2px 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.taglineInput {
+  width: 250px;
+  height: 30px;
+  margin: 10px 15px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border: none;
+  color: white;
+  padding: 2px 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.row > span > svg {
+  font-size: 30px;
+  margin: 10px 15px;
+  border-radius: 50%;
+  background-color: rgba(47, 54, 56, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+.addQuestionsManualForm {
+  margin: 10px 0;
+  width: fit-content;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.saveBtn {
+  width: 100px;
+  padding: 10px 0;
+  font-size: 20px;
+  color: green;
+  border: 1px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.saveBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+.questionsInDetails > h3 {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.addQuestionsThroughCsv {
+  text-align: center;
+}
+
+.addQuestionsThroughCsv > h3 {
+  margin: 10px 0;
+}
+
+.formSection__header {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category__select,
+.subCategory__select {
+  width: 250px;
+}

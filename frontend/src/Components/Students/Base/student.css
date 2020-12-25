@@ -1,0 +1,154 @@
+.header {
+  width: 100%;
+  background-color: rgb(63, 63, 63);
+  height: 100px;
+  z-index: 100;
+}
+
+.username {
+  float: right;
+  margin: 30px 5px 30px 30px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.userLogout {
+  float: right;
+  margin: 30px;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tagline {
+  float: left;
+  margin: 30px;
+  color: white;
+}
+
+.questionssets {
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 20px;
+  /* float: left; */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.tealLove {
+  background: linear-gradient(to right, #aaffa9, #11ffbd);
+}
+
+.danceToForget {
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+}
+
+.cherryblossoms {
+  background: linear-gradient(to right, #fbd3e9, #bb377d);
+}
+
+.dirtyFog {
+  background: linear-gradient(to right, #b993d6, #8ca6db);
+}
+
+.color1 {
+  background: linear-gradient(to right, #00d2ff, #3a7bd5);
+}
+
+.color2 {
+  background: linear-gradient(to right, #fbd3e9, #bb377d);
+}
+
+.color3 {
+  background: linear-gradient(to right, #ff4e50, #f9d423);
+}
+
+.color4 {
+  background: linear-gradient(to right, #f0c27b, #4b1248);
+}
+
+.questionset {
+  width: 22%;
+  height: 300px;
+  float: left;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.takeQuiz__btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.takeQuiz__btn:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.categorySubCategoryHeader {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(63, 63, 63);
+  color: white;
+  padding: 10px 15px;
+}
+
+.category__inHeader {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.subCategories {
+  position: absolute;
+  /* top: 20%; */
+  width: fit-content;
+  height: fit-content;
+  z-index: 100;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #00d0ff;
+}
+
+.subCategories > span {
+  padding: 10px 15px;
+  background-color: rgba(214, 248, 255, 0.5);
+  margin: 2px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.subCategories > span:hover {
+  background-color: rgba(117, 181, 196, 0.9);
+}
+
+.closeMenu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 90;
+}

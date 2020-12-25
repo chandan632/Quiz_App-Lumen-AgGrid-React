@@ -1,0 +1,82 @@
+.questionssets {
+  width: 80%;
+  height: 100vh;
+  float: right;
+  padding: 20px;
+}
+.questionssets > h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.questionSetModal {
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.questionSetModalDropBox {
+  color: red;
+  position: relative;
+  background-color: #fefefe;
+  /* left: 40%; */
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: fit-content;
+  height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.isSuccessMsg {
+  padding: 15px 20px;
+  width: 100%;
+  background-color: rgb(90, 241, 115);
+  color: white;
+  margin: 5px 0;
+}
+
+.isErrorMsg {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgb(255, 97, 97);
+  margin: 5px 0;
+  color: white;
+}

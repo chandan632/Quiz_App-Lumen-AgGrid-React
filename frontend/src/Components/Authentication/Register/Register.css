@@ -1,0 +1,123 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap");
+
+.authenticationPanel {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#25ccf7, #ff6464);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register {
+  width: 30%;
+  height: fit-content;
+  background-color: rgba(47, 54, 56, 0.3);
+  border-radius: 20px;
+}
+
+.register > h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-family: "Merriweather", serif;
+  color: white;
+  /* ont-family: "Roboto Condensed", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.register > form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: stretch; */
+  align-items: center;
+}
+
+.register > form > div {
+  width: 70%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.register > form > div > small {
+  color: red;
+}
+
+.register > form > div > input {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(47, 54, 56, 0.5);
+  border: none;
+  color: white;
+  padding: 2px 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.register > form > button {
+  width: fit-content;
+  margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: white;
+  border: 1px solid #45ce30;
+  border-radius: 5px;
+  color: #45ce30;
+}
+
+.register > form > button:hover {
+  background-color: #45ce30;
+  color: white;
+}
+
+.register > center {
+  margin: 15px 0;
+}
+
+.register > center > small {
+  color: white;
+}
+
+.isPasswordError {
+  border: 1px solid rgb(252, 34, 34) !important;
+  background-color: whitesmoke !important;
+  color: rgb(252, 34, 34) !important;
+}
+.isPasswordError::placeholder {
+  color: rgb(252, 34, 34);
+}
+
+.isNumberError {
+  border: 1px solid rgb(252, 34, 34) !important;
+  background-color: whitesmoke !important;
+  color: rgb(252, 34, 34) !important;
+}
+.isNumberError::placeholder {
+  color: rgb(252, 34, 34);
+}
+
+.isEmailError {
+  border: 1px solid rgb(252, 34, 34) !important;
+  background-color: whitesmoke !important;
+  color: rgb(252, 34, 34) !important;
+}
+.isEmailError::placeholder {
+  color: rgb(252, 34, 34);
+}
+
+.isNameError {
+  border: 1px solid rgb(252, 34, 34) !important;
+  color: rgb(252, 34, 34) !important;
+  background-color: whitesmoke !important;
+}
+.isNameError::placeholder {
+  color: rgb(252, 34, 34) !important;
+}

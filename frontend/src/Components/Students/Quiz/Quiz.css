@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.quizSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.topics {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topics > h1 {
+  margin: 10px 0;
+  text-decoration: underline;
+  font-family: "Rubik", sans-serif;
+}
+
+.topics > h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.rules {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rules > h1 {
+  margin: 10px 0;
+  text-decoration: underline;
+  font-family: "Rubik", sans-serif;
+}
+
+.rules > ol > li {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.goAhead {
+  margin: 15px 0;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid blue;
+  color: blue;
+  cursor: pointer;
+}
+
+.goAhead:hover {
+  background-color: blue;
+  color: white;
+}
+
+.onQuiz {
+  width: 100vw;
+  height: 100vh;
+  background: #fdfc47;
+  background: -webkit-linear-gradient(to right, #24fe41, #fdfc47);
+  background: linear-gradient(to right, #24fe41, #fdfc47);
+}
+
+.quizHeader {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+
+.onQuizSection {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onQuizFooter {
+  width: 100%;
+  text-align: center;
+}
+
+.nextBtn {
+  background-color: white;
+  border: 1px solid rgb(94, 235, 94);
+  color: rgb(94, 235, 94);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.nextBtn:hover {
+  background-color: rgb(94, 235, 94);
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.nextBtn:disabled {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+}
+.nextBtn:disabled:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+  transform: scale(1) !important;
+}
+
+.endTestBtn {
+  background-color: white;
+  border: 1px solid rgb(238, 84, 84);
+  color: rgb(238, 84, 84);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.endTestBtn:hover {
+  background-color: rgb(238, 84, 84);
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.result {
+  width: 100vw;
+  height: 100vh;
+  background: #ffb347;
+  background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);
+  background: linear-gradient(to right, #ffcc33, #ffb347);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.onQuizQuestion {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.optionsOfQuestion > span,
+.optionsOfQuestion > input {
+  margin: 5px 5px;
+}
+
+.tagline > a {
+  text-decoration: none;
+  color: unset;
+}
+
+.optionsOfQuestion {
+  width: 40%;
+  height: 300px;
+  background-color: rgba(223, 223, 223, 0.5);
+  float: left;
+  padding: 20px;
+}
+
+.onQuizQuestion {
+  margin: 10px 10px;
+}
+
+.label1,
+.label2,
+.label3,
+.label4 {
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.label1:hover,
+.label2:hover,
+.label3:hover,
+.label4:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.label1 > input,
+.label2 > input,
+.label3 > input,
+.label4 > input {
+  padding: 0 10px;
+}
+
+.label1 > span,
+.label2 > span,
+.label3 > span,
+.label4 > span {
+  padding: 0 10px;
+}

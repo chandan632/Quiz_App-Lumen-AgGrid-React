@@ -38,8 +38,8 @@ class CategoryGrid extends React.Component {
         },
       },
     ],
-    paginationPageSize: 10,
-    cacheBlockSize: 10,
+    paginationPageSize: 3,
+    cacheBlockSize: 3,
     defaultColDef: {
       flex: 1,
       minWidth: 100,
@@ -66,7 +66,7 @@ class CategoryGrid extends React.Component {
   showData = () => {
     let dataSource = {
       getRows: (param) => {
-        console.log(param.request);
+        console.log(param);
         console.log(param.request.startRow + " to " + param.request.endRow);
         fetch("http://localhost:8000/pagedcategory", {
           method: "POST",

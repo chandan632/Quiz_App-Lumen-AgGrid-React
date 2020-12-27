@@ -90,7 +90,7 @@ class Category extends Model
                 $result = $query->skip($data["offset"])->limit($data["limit"])->get();
                 return json_encode($result);
             } else {
-                $query->where(function ($q) {
+                $query->orWhere(function ($q) {
                     $condition2Filter = $this->filterModel["condition2"]["filter"];
                     $condition2Type = $this->filterModel["condition2"]["type"];
                     switch ($condition2Type) {

@@ -93,10 +93,7 @@ class CategoryGrid extends React.Component {
               param,
               lastRow,
             });
-            param.successCallback(
-              result,
-              this.state.lastRow !== -1 ? this.state.lastRow : lastRow
-            );
+            param.successCallback(result, this.state.lastRow);
           });
       },
     };

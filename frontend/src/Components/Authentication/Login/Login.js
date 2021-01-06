@@ -4,7 +4,12 @@ import validator from "validator";
 import "./Login.css";
 import { Link, Redirect } from "react-router-dom";
 
-import { isAdmin, isLoggedIn } from "./../../../util/isAuth";
+import {
+  getCookie,
+  isAdmin,
+  isLoggedIn,
+  setCookie,
+} from "./../../../util/isAuth";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -53,7 +58,9 @@ function Login() {
             setIsLoginError(res.error);
           } else {
             const token = res.token;
-            localStorage.setItem("token", token);
+            // localStorage.setItem("token", token);
+            setCookie("token", token, 1);
+
             checkAuth();
           }
         })

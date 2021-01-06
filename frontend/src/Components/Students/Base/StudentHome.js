@@ -3,7 +3,12 @@ import { Redirect, Link } from "react-router-dom";
 import "./student.css";
 // import {}
 
-import { isAdmin, isLoggedIn, username } from "./../../../util/isAuth";
+import {
+  expireCookie,
+  isAdmin,
+  isLoggedIn,
+  username,
+} from "./../../../util/isAuth";
 
 export class StudentPanel extends Component {
   state = {
@@ -89,7 +94,7 @@ export class StudentPanel extends Component {
   }
 
   logoutHandler = () => {
-    localStorage.removeItem("token");
+    expireCookie("token");
     this.setState({
       isRedirectTo: "/login",
     });

@@ -7,11 +7,13 @@ import CategoryIcon from "@material-ui/icons/Category";
 import SubjectIcon from "@material-ui/icons/Subject";
 import ListIcon from "@material-ui/icons/List";
 import AddBoxIcon from "@material-ui/icons/AddBox";
+import { expireCookie } from "../../../util/isAuth";
 
 function SideBar() {
   const [isRedirectTo, setIsRedirectTo] = useState("");
   const logoutHandler = () => {
-    localStorage.removeItem("token");
+    // localStorage.removeItem("token");
+    expireCookie("token");
     setIsRedirectTo("/login");
   };
   return (
